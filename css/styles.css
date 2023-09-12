@@ -1,0 +1,238 @@
+/* 
+Student Name: Anthony Gonzalez
+File Name: styles.css
+Date: 4/24/2022
+*/
+
+/* General page style elements*/
+html {
+    background-color: #ffe4c4;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    border-radius: 20px;
+    max-height: 450px;
+}
+
+body { 
+    opacity: 0;
+    transition: opacity .5s;
+ }
+
+/*h list style rules*/
+
+h1 {
+    margin-bottom: 1%;
+    text-align: center;
+    font-size: 3em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 3em;
+}
+
+h3 {
+    text-align: center;
+}
+
+/*nav list style rules*/
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+    background-color: rgb(245, 241, 255);
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-radius: 35px;
+    max-width: 850px;
+    max-height: 65px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav ul {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    list-style: none;
+    padding-left: 0%;
+}
+
+nav li {
+    font-weight: bold;
+    padding: 3%;
+    display: inline-block;
+}
+
+/* class element style rules for index.html*/
+
+.navdiv {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bottomtext {
+    margin-top: 0%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.video {
+    width: 50%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-radius: 35px;
+    display: block;
+}
+
+.spanstyle {
+    text-decoration: underline;
+}
+/*class element style rules for contact.html*/
+
+.pagedesc {
+    text-decoration: underline;
+    margin-bottom: 5%;
+}
+.schoollink {
+    width: 350px;
+    margin-left:auto;
+    margin-right: auto;
+    display: block;
+} 
+
+.imagetext {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-decoration: underline;
+}
+
+.altemail {
+    font-size: 85%;
+    margin-top: 1%;
+}
+
+/*class element style rules for about.html*/    
+
+.selfimg {
+    max-width: 850px;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.selftwo {
+    margin-left: 5px;
+}
+ 
+.studentname {
+    text-align: center;
+    font-weight: bold;
+}
+
+.date {
+    text-align: center;
+    font-weight: bold;
+}
+
+.images {
+    object-fit: cover;
+    transition: transform 1s ;
+    z-index: 1;
+}
+
+.abouttext {
+    font-size: larger;
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* anchor text color */
+
+a { 
+    color: black;
+}
+
+/*psuedo-class elements*/
+
+.spanstyle:visited {
+    color:#c5c5c5;
+}
+
+.spanstyle:hover {
+    color:#ff5f38;
+    cursor: pointer;
+}
+
+.images:hover {
+    transform: scale(1.50);
+    z-index: 2;
+}
+/*Gradient style rules*/
+
+.gradient {
+    color: black;
+    max-width: 850px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgba(255, 153, 0, 0.671), rgb(245, 241, 255));
+}
+
+.gradient p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.ml9 {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.ml9 .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.ml9 .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
+/*style rules for mobile viewport*/
+
+@media all and (max-width: 820px) {
+
+    .images {
+        max-width: 50%;
+    }
+
+    .schoollink {
+        width: 100%
+    }
+
+    .video {
+        width: 100%;
+    }
+}
